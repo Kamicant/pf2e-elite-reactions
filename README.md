@@ -1,20 +1,42 @@
-# PF2e Elite Reactions
+# PF2e Boss Reactions
 
-Adds an **Elite Reaction** action-type option to PF2e action/feat item sheets and an NPC tracker for extra reaction uses.
+Replacement update for the old Elite Reactions module.
 
-## V0.2.0 changes
+The module folder/id is still `pf2e-elite-reactions` so it can replace the old version cleanly, but the visible mechanic is now called **Boss Reactions** to avoid colliding with PF2e's existing **Elite** adjustment/wording.
 
-- Updated the manifest for Foundry VTT v14.
-- Added ApplicationV2 render/header hooks while keeping older fallback hooks.
-- NPC sheets now stay clean when Elite Reactions are turned off.
-- A GM header button on NPC sheets enables or disables the Elite Reactions tracker.
-- Marked Elite Reaction abilities only get their badge/use button while the NPC's Elite Reactions pool is enabled.
+## New trait-based behavior
+
+### NPC trait
+
+Add this trait to an NPC:
+
+```text
+boss-reactions
+```
+
+When an NPC has that trait, the Boss Reactions tracker appears automatically on the NPC sheet. If the trait is removed, the tracker disappears.
+
+The GM sheet header also gets a quick button to add/remove the trait, but the trait itself is the important part.
+
+### Ability/item trait
+
+Add this trait to an NPC ability/action you want to spend from the pool:
+
+```text
+boss-reaction
+```
+
+Those abilities receive a Boss Reaction badge and a **Use Boss Reaction** button while the owning NPC has the `boss-reactions` trait.
+
+The module also adds a small checkbox to action/feat item sheets called **Boss Reaction ability**, which toggles the `boss-reaction` trait for you.
+
+## Why this update exists
+
+The old module tried to add a fake action type named Elite Reaction. PF2e only expects its real action types, so that approach was fragile in Foundry v14. This version stores everything as normal PF2e data plus traits, which should be much safer.
 
 ## Usage
 
-1. Open an NPC sheet.
-2. As GM, use the sheet header control labeled **Enable Elite Reactions**.
-3. Set the tracker to 3/3 or whatever value you want.
-4. Open an action/feat item and choose **Elite Reaction** in the action type dropdown.
-
-The item is stored as a normal PF2e reaction plus a module flag, so it avoids invalid PF2e system data.
+1. Add `boss-reactions` to the monster/NPC traits.
+2. Set the pool to 3/3 or whatever you want.
+3. Add `boss-reaction` to special abilities that use the pool, or use the checkbox on the ability sheet.
+4. Click **Use Boss Reaction** on the ability, or use the generic **Spend Boss Reaction** button in the tracker.
