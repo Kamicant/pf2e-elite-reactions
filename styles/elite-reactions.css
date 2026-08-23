@@ -1,0 +1,89 @@
+.pf2e-elite-reactions-panel {
+  border: 1px solid var(--color-border-light-tertiary, #999);
+  border-radius: 6px;
+  padding: 0.5rem;
+  margin: 0.35rem 0 0.65rem;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.pf2e-elite-reactions-panel .er-title-row,
+.pf2e-elite-reactions-panel .er-tracker {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.pf2e-elite-reactions-panel .er-title-row {
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.pf2e-elite-reactions-panel input[type="number"] {
+  width: 3.5rem;
+  text-align: center;
+}
+
+.pf2e-elite-reactions-panel .er-hint {
+  margin: 0.25rem 0 0;
+  font-size: 0.8rem;
+  opacity: 0.75;
+}
+
+.pf2e-elite-reaction-item {
+  border-left: 3px solid var(--color-border-highlight, #b08d57);
+  padding-left: 0.25rem;
+}
+
+.pf2e-er-badge {
+  display: inline-block;
+  margin-left: 0.35rem;
+  padding: 0.05rem 0.35rem;
+  border: 1px solid var(--color-border-light-primary, #777);
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.pf2e-er-use {
+  margin-left: 0.35rem;
+  white-space: nowrap;
+}
+
+.pf2e-elite-reactions-panel .er-title-label,
+.pf2e-er-badge,
+.pf2e-er-use,
+.pf2e-er-select-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.pf2e-er-icon,
+.pf2e-er-badge img,
+.pf2e-er-use img,
+.pf2e-er-select-indicator img,
+.pf2e-er-header-icon {
+  width: 1.2em;
+  height: 1.2em;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.pf2e-er-header-icon {
+  margin-right: 0.25rem;
+}
+
+.pf2e-er-select-indicator {
+  margin-left: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  white-space: nowrap;
+  color: var(--color-text-dark-primary, inherit);
+}
+
+.pf2e-er-select-indicator.er-hidden {
+  display: none;
+}

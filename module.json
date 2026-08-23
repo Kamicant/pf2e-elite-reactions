@@ -1,0 +1,47 @@
+{
+  "id": "pf2e-elite-reactions",
+  "title": "PF2e Elite Reactions",
+  "description": "Adds an Elite Reaction option for PF2e NPC abilities and a hide-when-off NPC tracker for elite reaction uses.",
+  "version": "0.2.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.367"
+  },
+  "authors": [
+    {
+      "name": "Michael McQuain"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "8.1.0",
+          "verified": "8.4.1"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/elite-reactions.js"
+  ],
+  "styles": [
+    "styles/elite-reactions.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "media": [
+    {
+      "type": "setup",
+      "url": "modules/pf2e-elite-reactions/assets/elite-reaction-icon.webp",
+      "thumbnail": "modules/pf2e-elite-reactions/assets/elite-reaction-icon.webp"
+    }
+  ]
+}

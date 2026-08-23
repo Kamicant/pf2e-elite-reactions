@@ -1,0 +1,14 @@
+{
+  "PF2EEliteReactions.EliteReaction": "Elite Reaction",
+  "PF2EEliteReactions.EliteReactions": "Elite Reactions",
+  "PF2EEliteReactions.Enable": "Enable Elite Reactions",
+  "PF2EEliteReactions.Disable": "Disable Elite Reactions",
+  "PF2EEliteReactions.TrackerHint": "Tracks this NPC's extra elite reaction pool.",
+  "PF2EEliteReactions.Use": "Use Elite Reaction",
+  "PF2EEliteReactions.Reset": "Reset Elite Reactions",
+  "PF2EEliteReactions.Spent": "{actor} used an Elite Reaction for {item}. {remaining}/{max} remaining.",
+  "PF2EEliteReactions.Empty": "No Elite Reactions remaining for {actor}.",
+  "PF2EEliteReactions.Disabled": "Elite Reactions are not enabled for {actor}.",
+  "PF2EEliteReactions.Marked": "Marked as Elite Reaction.",
+  "PF2EEliteReactions.Unmarked": "Elite Reaction removed."
+}
